@@ -9,7 +9,7 @@ public class Detect2DClick : MonoBehaviour
     private RaycastHit2D _hit;
     private Vector2 _clickPosition;
 
-    private HouseRooms _girlRoom;
+    private HouseRooms _currenRoom;
 
     #endregion
 
@@ -24,7 +24,7 @@ public class Detect2DClick : MonoBehaviour
         {
             var item = GetItemCollider(Input.mousePosition);
 
-            if (item != null && item.ItemRoom.Equals(_girlRoom))
+            if (item != null && item.ItemRoom.Equals(_currenRoom))
                 item.Interact();
         }
     }
@@ -42,5 +42,11 @@ public class Detect2DClick : MonoBehaviour
         }
 
         return null;
+    }
+
+    private void ReceiveCurrentRoom(HouseRooms girlRoom)
+    {
+        //method called by the girl event 
+        _currenRoom = girlRoom;
     }
 }
