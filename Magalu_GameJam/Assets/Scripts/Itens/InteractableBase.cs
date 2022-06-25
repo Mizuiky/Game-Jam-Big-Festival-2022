@@ -30,6 +30,9 @@ public class InteractableBase : MonoBehaviour, IInteractable
     [SerializeField]
     private Ease _ease;
 
+    [SerializeField]
+    private bool _hasItem;
+
     #endregion
 
     #region Private Fields
@@ -37,6 +40,8 @@ public class InteractableBase : MonoBehaviour, IInteractable
     protected string _itemName;
 
     private HouseRooms _itemRoom;
+
+    private Vector3 _originalScale;
 
     #endregion
 
@@ -54,9 +59,14 @@ public class InteractableBase : MonoBehaviour, IInteractable
         Init();
     }
 
-    private void OnMouseEnter()
+    public void OnMouseEnter()
     {
         ScaleAnimation();
+    }
+
+    public void OnMouseExit()
+    {
+        ResetScale();
     }
 
     protected virtual void Init()
@@ -64,15 +74,22 @@ public class InteractableBase : MonoBehaviour, IInteractable
         _itemName = _data.itemName;
         _itemRoom = _data.itemRoom;
         _itemIcon.sprite = _data.itemIcon;
+
+        _originalScale = _model.localScale;
     }
 
     public virtual void Interact() 
     {
-        DialogManager.Instance.Initialize(_dialog, _itemName);   
+        DialogManager.Instance.Initialize(_dialog, _itemName, _hasItem);   
     }
 
     public void ScaleAnimation()
     {
         _model.DOScale(_scale, _timeToScale).SetLoops(2, LoopType.Yoyo).SetEase(_ease);
+    }
+
+    public void ResetScale()
+    {
+        _model.localScale = _originalScale;
     }
 }
