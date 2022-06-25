@@ -13,12 +13,6 @@ public class SO_Dialog : ScriptableObject
 [Serializable]
 public class DialogData
 {
-    public string _characterName;
-
-    public Sprite _image;
-
-    public Animator _animator;
-
     [TextArea(5, 100)]
     public string _text; 
 }
