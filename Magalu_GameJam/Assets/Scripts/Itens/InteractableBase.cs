@@ -7,6 +7,14 @@ public class InteractableBase : MonoBehaviour, IInteractable
 {
     #region Serializable Fields
 
+    [Header("Animation Scale")]
+
+    [SerializeField]
+    private float _scale;
+
+    [SerializeField]
+    private float _timeToScale;
+
     [SerializeField]
     private SO_ItemData _data;
 
@@ -15,6 +23,12 @@ public class InteractableBase : MonoBehaviour, IInteractable
 
     [SerializeField]
     private SpriteRenderer _itemIcon;
+
+    [SerializeField]
+    private Transform _model;
+
+    [SerializeField]
+    private Ease _ease;
 
     #endregion
 
@@ -38,7 +52,12 @@ public class InteractableBase : MonoBehaviour, IInteractable
     public void Start()
     {
         Init();
-    }   
+    }
+
+    private void OnMouseEnter()
+    {
+        ScaleAnimation();
+    }
 
     protected virtual void Init()
     {
@@ -49,13 +68,11 @@ public class InteractableBase : MonoBehaviour, IInteractable
 
     public virtual void Interact() 
     {
-        ScaleAnimation();
-
         DialogManager.Instance.Initialize(_dialog, _itemName);   
     }
 
     public void ScaleAnimation()
     {
-        //this.transform.DOScale(5, 0.3f);
+        _model.DOScale(_scale, _timeToScale).SetLoops(2, LoopType.Yoyo).SetEase(_ease);
     }
 }
