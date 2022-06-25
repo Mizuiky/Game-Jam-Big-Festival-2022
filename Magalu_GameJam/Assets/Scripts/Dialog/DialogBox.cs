@@ -20,9 +20,6 @@ public class DialogBox : MonoBehaviour
     private TextMeshProUGUI _characterName;
 
     [SerializeField]
-    private Image _image;
-
-    [SerializeField]
     private Button _next;
 
     #endregion
@@ -61,12 +58,6 @@ public class DialogBox : MonoBehaviour
     {
         if (name != null)
             _characterName.text = name;
-    }
-
-    public void SetImage(Sprite image)
-    {
-        if(image != null)
-            _image.sprite = image;
     }
 
     public void Enable(bool open)
