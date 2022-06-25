@@ -28,6 +28,8 @@ public class DialogManager : Singleton<DialogManager>
 
     private int _currentDialogIndex;
 
+    private string _dialogName;
+
     private DialogData[] _dialogs;
 
     #endregion
@@ -52,7 +54,7 @@ public class DialogManager : Singleton<DialogManager>
         _currentDialogIndex = 0;
     }
 
-    public void Initialize(SO_Dialog data)
+    public void Initialize(SO_Dialog data, string itemName = "")
     {
         _dialogBox.Enable(true);
 
@@ -60,6 +62,8 @@ public class DialogManager : Singleton<DialogManager>
         Init();
 
         _dialogs = data._dialog.ToArray();
+        _dialogName = itemName;
+
         Write();
     }
 
@@ -70,6 +74,8 @@ public class DialogManager : Singleton<DialogManager>
             _dialogs = null;
             GC.Collect();
         }
+
+        _dialogName = "";
 
         _dialogBox.ClearFields();
     }
@@ -85,8 +91,8 @@ public class DialogManager : Singleton<DialogManager>
     {     
         var aux = _dialogs[_currentDialogIndex];
 
-        _dialogBox.SetName(aux._characterName);
-        _dialogBox.SetImage(aux._image);
+        if(_dialogName != null)
+            _dialogBox.SetName(_dialogName);
 
         var dialog = aux._text.ToCharArray();
 
