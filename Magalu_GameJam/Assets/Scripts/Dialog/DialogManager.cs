@@ -26,6 +26,8 @@ public class DialogManager : Singleton<DialogManager>
 
     private bool _isWriting;
 
+    private bool _hasEspecialItem;
+
     private int _currentDialogIndex;
 
     private string _dialogName;
@@ -54,7 +56,7 @@ public class DialogManager : Singleton<DialogManager>
         _currentDialogIndex = 0;
     }
 
-    public void Initialize(SO_Dialog data, string itemName = "")
+    public void Initialize(SO_Dialog data, string itemName = "", bool hasItem = false)
     {
         _dialogBox.Enable(true);
 
@@ -63,6 +65,7 @@ public class DialogManager : Singleton<DialogManager>
 
         _dialogs = data._dialog.ToArray();
         _dialogName = itemName;
+        _hasEspecialItem = hasItem;
 
         Write();
     }
@@ -119,6 +122,10 @@ public class DialogManager : Singleton<DialogManager>
             if (_currentDialogIndex == _dialogs.Length)
             {
                 _dialogBox.Enable(false);
+
+                if (_hasEspecialItem)
+                    ShowItem();
+
                 return;
             }
                 
@@ -127,4 +134,9 @@ public class DialogManager : Singleton<DialogManager>
             Write();
         }       
     }  
+
+    public void ShowItem()
+    {
+        ItemManager.Instance.ShowEspecialItem();
+    }
 }
