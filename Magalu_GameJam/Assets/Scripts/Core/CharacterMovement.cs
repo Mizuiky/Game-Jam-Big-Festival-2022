@@ -8,58 +8,61 @@ namespace Core
     public class CharacterMovement : MonoBehaviour
     {
         [SerializeField]
-        private Points[] points = new Points[4];
-        private Points point;
-        private int count;
-        private string state;
+        private Transform[] routes;
+        private int routeToGo;
+
+        [SerializeField]
+        private float speedModifier;
+        private float tParam;
+        private Vector2 characterPosition;
+        private bool coroutineAllowed;
 
         private void Start()
         {
-            state = points[0].identifier;
-            count = points.Length-1;
-            StartCoroutine(Move());
-
+            routeToGo = 0;
+            tParam = 0f;
+            speedModifier = 0.2f;
+            coroutineAllowed = true;
         }
 
         private void Update() {
-            if(state == "moving")
+            if(coroutineAllowed)
             {
-                transform.position = Vector3.Lerp(transform.position, point.transform.position, Time.deltaTime * 2f);
-
-                if(Vector3.Distance(transform.position, point.transform.position)  <= 0.1f)
-                {
-                    state = point.identifier;
-                }
+                StartCoroutine(Move(routeToGo));
             }
         }
 
-        IEnumerator Move() {
-            while(true) { 
-                if(count < points.Length)
-                {
-                    Shuffle();
-                    count = 0;
-                }
+        private IEnumerator Move(int routeNumber) {
+            coroutineAllowed = false;
 
-                Debug.Log(points[count].identifier);
-                point = points[count];
-                state = "moving";
-                count++;
-                yield return new WaitForSeconds(5.0f);
-            }
-        }
+            Vector2 p0 = routes[routeNumber].GetChild(0).position;
+            Vector2 p1 = routes[routeNumber].GetChild(1).position;
+            Vector2 p2 = routes[routeNumber].GetChild(2).position;
+            Vector2 p3 = routes[routeNumber].GetChild(3).position;
 
-        private void Shuffle()
-        {
-            Points tempGO;
-
-            for (int i = 0; i < points.Length; i++)
+            while(tParam < 1)
             {
-                int rnd = Random.Range(0, points.Length);
-                tempGO = points[rnd];
-                points[rnd] = points[i];
-                points[i] = tempGO;
+                tParam += Time.deltaTime * speedModifier;
+
+                characterPosition = Mathf.Pow(1 - tParam, 3) * p0 +
+                3 * Mathf.Pow(1 - tParam, 2) * tParam * p1 +
+                3 * (1 - tParam) * Mathf.Pow(tParam, 2) * p2 +
+                Mathf.Pow(tParam, 3) * p3;
+
+                transform.position = characterPosition;
+                yield return new WaitForEndOfFrame();
             }
+
+            tParam = 0f;
+
+            routeToGo += 1;
+
+            if(routeToGo > routes.Length - 1)
+            {
+                routeToGo = 0;
+            }
+
+            coroutineAllowed = true;
         }
     }
 }
