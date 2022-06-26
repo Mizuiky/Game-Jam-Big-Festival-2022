@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Blue Potion
   itemIcon: {fileID: 21300000, guid: 9e8e2f65ea8a34a3e8d9ef2f20ee1297, type: 3}
+  itemRoom: 0
+  hasEspecialItem: 1
