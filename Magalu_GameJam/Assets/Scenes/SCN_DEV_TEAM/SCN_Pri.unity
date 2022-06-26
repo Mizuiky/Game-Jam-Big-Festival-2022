@@ -362,26 +362,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2409609345166396096, guid: 15603b5cb4bed85488bc705fad204f8f, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2852665220227056048, guid: 15603b5cb4bed85488bc705fad204f8f, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3456790583800529082, guid: 15603b5cb4bed85488bc705fad204f8f, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4017495470358643512, guid: 15603b5cb4bed85488bc705fad204f8f, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4034820603957277883, guid: 15603b5cb4bed85488bc705fad204f8f, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 5362128608663399522, guid: 15603b5cb4bed85488bc705fad204f8f, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -429,14 +409,6 @@ PrefabInstance:
     - target: {fileID: 5362128608663399523, guid: 15603b5cb4bed85488bc705fad204f8f, type: 3}
       propertyPath: m_Name
       value: Flower
-      objectReference: {fileID: 0}
-    - target: {fileID: 6792906182730048085, guid: 15603b5cb4bed85488bc705fad204f8f, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7077642085768313790, guid: 15603b5cb4bed85488bc705fad204f8f, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15603b5cb4bed85488bc705fad204f8f, type: 3}
