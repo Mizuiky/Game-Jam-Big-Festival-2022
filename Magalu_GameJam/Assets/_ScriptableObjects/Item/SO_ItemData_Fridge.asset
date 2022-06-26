@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ba8900c88b862b41bb804501408d85a, type: 3}
-  m_Name: SO_Dialog_BedTable
+  m_Script: {fileID: 11500000, guid: 553149575be6a7245af2bdb67b7f7c55, type: 3}
+  m_Name: SO_ItemData_Fridge
   m_EditorClassIdentifier: 
-  _dialog:
-  - _text: "Aonde foi mesmo que coloquei aquela rosa? Ela costumava ficar aqui. \r\n\n"
-  - _text: "Foi um presente dela\u2026 acho que eu deixei no jardim.\r"
+  itemName: Geladeira
+  itemIcon: {fileID: 21300000, guid: 2068cb79c8b0eff4bbfc7fa7ca87ea63, type: 3}
+  itemRoom: 1
+  hasEspecialItem: 0
