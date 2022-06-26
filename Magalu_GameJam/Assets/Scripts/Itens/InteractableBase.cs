@@ -30,9 +30,6 @@ public class InteractableBase : MonoBehaviour, IInteractable
     [SerializeField]
     private Ease _ease;
 
-    [SerializeField]
-    private bool _hasItem;
-
     #endregion
 
     #region Private Fields
@@ -40,6 +37,8 @@ public class InteractableBase : MonoBehaviour, IInteractable
     protected string _itemName;
 
     private HouseRooms _itemRoom;
+
+    private bool _hasEspecialItem;
 
     private Vector3 _originalScale;
 
@@ -74,13 +73,14 @@ public class InteractableBase : MonoBehaviour, IInteractable
         _itemName = _data.itemName;
         _itemRoom = _data.itemRoom;
         _itemIcon.sprite = _data.itemIcon;
+        _hasEspecialItem = _data.hasEspecialItem;
 
         _originalScale = _model.localScale;
     }
 
     public virtual void Interact() 
     {
-        DialogManager.Instance.Initialize(_dialog, _itemName, _hasItem);   
+        DialogManager.Instance.Initialize(_dialog, _hasEspecialItem, _itemName);   
     }
 
     public void ScaleAnimation()
