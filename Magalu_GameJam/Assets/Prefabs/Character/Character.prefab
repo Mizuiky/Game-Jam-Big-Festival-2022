@@ -1539,7 +1539,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6416194070726525384}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -13.54, y: 1.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1614,9 +1614,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   routes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4341765785111607351, guid: 1ecc6145f635d4372b3b23818003f766, type: 3}
+  - {fileID: 2527502480508433318, guid: 471b68ce4368a4feca00ed4029eafad8, type: 3}
+  - {fileID: 7509630534710651970, guid: 303ca15ae3dfc400f90a6ca57b8cd27f, type: 3}
   routeToGo: 0
   previousRoute: 0
   moveFoward: 1
