@@ -87,6 +87,8 @@ public class DialogManager : Singleton<DialogManager>
     {
         _isWriting = true;
 
+        AudioController.Instance.Play("Dialogo");
+
         StartCoroutine(WriteText());
     }
 
@@ -107,6 +109,8 @@ public class DialogManager : Singleton<DialogManager>
         }
        
         _isWriting = false;
+
+        AudioController.Instance.Stop("Dialogo");
 
         _dialogBox.EnableNextButton();
     }

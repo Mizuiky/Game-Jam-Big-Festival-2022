@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2359619947069618077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2359619947069618075}
+  - component: {fileID: 2359619947069618074}
+  m_Layer: 0
+  m_Name: AudioController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2359619947069618075
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2359619947069618077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5672467, y: -0.41552955, z: -0.2241184}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2359619947069618074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2359619947069618077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 771d8af5c4cacb046b473716b20bb0c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameSounds:
+  - name: SelecaoMenu
+    clip: {fileID: 8300000, guid: 9d71767427bac40e4b9329e19684dffa, type: 3}
+    volume: 0.403
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Trilha
+    clip: {fileID: 8300000, guid: 557d133151f174aeea312835e508eea2, type: 3}
+    volume: 0.403
+    pitch: 0.1
+    loop: 1
+    source: {fileID: 0}
+  - name: passos
+    clip: {fileID: 8300000, guid: 44f8ce1d4090a4ec3a18a612fbfafc61, type: 3}
+    volume: 0.403
+    pitch: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: MouseOver
+    clip: {fileID: 8300000, guid: 1ecb37dfd4fe1bf4c8fb86c84115b959, type: 3}
+    volume: 0.403
+    pitch: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: MouseClick
+    clip: {fileID: 8300000, guid: fe84a392f038d49e685c780acd16ff76, type: 3}
+    volume: 0.403
+    pitch: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: Brilhar
+    clip: {fileID: 8300000, guid: b6ca6a0cf420d404f94c751628541926, type: 3}
+    volume: 0.403
+    pitch: 0.1
+    loop: 1
+    source: {fileID: 0}
+  - name: Final
+    clip: {fileID: 8300000, guid: be5bc2b5e5173d84a996b21b2199f3ac, type: 3}
+    volume: 0.403
+    pitch: 0.1
+    loop: 1
+    source: {fileID: 0}
+  - name: Dialogo
+    clip: {fileID: 8300000, guid: 9061fd9e084c34416bc1acc1116c4f85, type: 3}
+    volume: 0.403
+    pitch: 0.1
+    loop: 1
+    source: {fileID: 0}

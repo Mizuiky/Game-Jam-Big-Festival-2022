@@ -57,6 +57,8 @@ public class InteractableBase : MonoBehaviour, IInteractable
 
     public void OnMouseEnter()
     {
+        AudioController.Instance.Play("MouseOver");
+
         ScaleAnimation();
     }
 
@@ -78,7 +80,9 @@ public class InteractableBase : MonoBehaviour, IInteractable
     {
         DialogManager.Instance.Initialize(_dialog, _hasEspecialItem, _itemName);
 
-        if(_hasEspecialItem)
+        AudioController.Instance.Play("MouseClick");
+
+        if (_hasEspecialItem)
             _hasEspecialItem = false;
     }
 
