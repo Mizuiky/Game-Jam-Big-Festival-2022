@@ -58,7 +58,7 @@ public class Detect2DClick : MonoBehaviour
 
     private void ReceiveCurrentRoom(HouseRooms girlRoom)
     {
-        //method called by the girl event 
+        //method called by the character movement 
         _currenGirlRoom = girlRoom;
     }
 }

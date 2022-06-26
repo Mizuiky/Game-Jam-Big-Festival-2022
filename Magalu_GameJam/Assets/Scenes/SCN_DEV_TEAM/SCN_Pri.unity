@@ -740,6 +740,93 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3370061954055203864, guid: 1ea30d7bd44724e0fa8519163ff911aa, type: 3}
   m_PrefabInstance: {fileID: 1712979213}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1798122003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1798122005}
+  - component: {fileID: 1798122004}
+  m_Layer: 0
+  m_Name: AudioController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1798122004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798122003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 771d8af5c4cacb046b473716b20bb0c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameSounds:
+  - name: SelecaoMenu
+    clip: {fileID: 8300000, guid: 9d71767427bac40e4b9329e19684dffa, type: 3}
+    volume: 0.403
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Trilha
+    clip: {fileID: 8300000, guid: 557d133151f174aeea312835e508eea2, type: 3}
+    volume: 0.403
+    pitch: 0.1
+    loop: 1
+    source: {fileID: 0}
+  - name: passos
+    clip: {fileID: 8300000, guid: 44f8ce1d4090a4ec3a18a612fbfafc61, type: 3}
+    volume: 0.403
+    pitch: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: MouseOver
+    clip: {fileID: 8300000, guid: 1ecb37dfd4fe1bf4c8fb86c84115b959, type: 3}
+    volume: 0.403
+    pitch: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: MouseClick
+    clip: {fileID: 8300000, guid: fe84a392f038d49e685c780acd16ff76, type: 3}
+    volume: 0.403
+    pitch: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: Brilhar
+    clip: {fileID: 8300000, guid: b6ca6a0cf420d404f94c751628541926, type: 3}
+    volume: 0.403
+    pitch: 0.1
+    loop: 1
+    source: {fileID: 0}
+  - name: Final
+    clip: {fileID: 8300000, guid: be5bc2b5e5173d84a996b21b2199f3ac, type: 3}
+    volume: 0.403
+    pitch: 0.1
+    loop: 1
+    source: {fileID: 0}
+--- !u!4 &1798122005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798122003}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5672467, y: -0.41552955, z: -0.2241184}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1803992129
 GameObject:
   m_ObjectHideFlags: 0
