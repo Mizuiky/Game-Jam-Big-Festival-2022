@@ -14,6 +14,11 @@ public class Detect2DClick : MonoBehaviour
 
     #endregion
 
+    public void Start()
+    {
+        Init();
+    }
+
     private void Init()
     {
         CharacterMovement.onChangedRoom += ReceiveCurrentRoom;
@@ -32,9 +37,6 @@ public class Detect2DClick : MonoBehaviour
 
             if (item != null && (item.ItemRoom.CompareTo(_currenGirlRoom) == 0))
             {
-                var comp = item.ItemRoom.CompareTo(_currenGirlRoom);
-
-                Debug.Log("comparação" + comp);
                 item.Interact();
             }
                 
@@ -56,8 +58,9 @@ public class Detect2DClick : MonoBehaviour
         return null;
     }
 
-    private void ReceiveCurrentRoom(HouseRooms girlRoom)
+    public void ReceiveCurrentRoom(HouseRooms girlRoom)
     {
+        Debug.Log("received girl room" + girlRoom);
         //method called by the character movement 
         _currenGirlRoom = girlRoom;
     }
