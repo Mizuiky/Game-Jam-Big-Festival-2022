@@ -26,12 +26,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1744159178431816797}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -18.2357, y: 5.4943, z: 90}
   m_LocalScale: {x: 0.37956068, y: 0.37956068, z: 0.37956068}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1744159178778611381}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47,11 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6799558af030baf45b6c04e997192f3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scale: 0.4
+  _scale: 0.39
   _timeToScale: 0.5
   _data: {fileID: 11400000, guid: fd439ecd16c5809448f54382e41a4fce, type: 2}
   _dialog: {fileID: 11400000, guid: 1107dc6e82098d948bbca44348f83450, type: 2}
-  _itemIcon: {fileID: 3307936945359523483}
   _model: {fileID: 1744159178431816792}
   _ease: 2
 --- !u!212 &3307936945359523483
@@ -94,7 +92,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 85d0f33fa1abc7d4a9f4e37cd3aa0e26, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -867,34 +865,3 @@ PolygonCollider2D:
       - {x: 4.02, y: 7.94}
       - {x: 4, y: 7.94}
       - {x: 3.97, y: 7.93}
---- !u!1 &1744159178778611339
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1744159178778611381}
-  m_Layer: 0
-  m_Name: Model
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1744159178778611381
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1744159178778611339}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.26, y: 5.48, z: 0}
-  m_LocalScale: {x: 0.38155282, y: 0.38155282, z: 0.38155282}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1744159178431816792}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
