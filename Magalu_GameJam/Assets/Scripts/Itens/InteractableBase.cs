@@ -22,9 +22,6 @@ public class InteractableBase : MonoBehaviour, IInteractable
     private SO_Dialog _dialog;
 
     [SerializeField]
-    private SpriteRenderer _itemIcon;
-
-    [SerializeField]
     private Transform _model;
 
     [SerializeField]
@@ -72,7 +69,6 @@ public class InteractableBase : MonoBehaviour, IInteractable
     {
         _itemName = _data.itemName;
         _itemRoom = _data.itemRoom;
-        _itemIcon.sprite = _data.itemIcon;
         _hasEspecialItem = _data.hasEspecialItem;
 
         _originalScale = _model.localScale;
@@ -93,6 +89,7 @@ public class InteractableBase : MonoBehaviour, IInteractable
 
     public void ResetScale()
     {
-        _model.localScale = _originalScale;
+        _model.DOKill();
+        _model.localScale = _originalScale;      
     }
 }

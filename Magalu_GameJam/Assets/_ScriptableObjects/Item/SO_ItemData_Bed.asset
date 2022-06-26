@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ba8900c88b862b41bb804501408d85a, type: 3}
-  m_Name: SO_Dialog_BluePotion
+  m_Script: {fileID: 11500000, guid: 553149575be6a7245af2bdb67b7f7c55, type: 3}
+  m_Name: SO_ItemData_Bed
   m_EditorClassIdentifier: 
-  _dialog:
-  - _text: It will restore your magic
+  itemName: Bed
+  itemIcon: {fileID: 21300000, guid: 85d0f33fa1abc7d4a9f4e37cd3aa0e26, type: 3}
+  itemRoom: 0
+  hasEspecialItem: 1
