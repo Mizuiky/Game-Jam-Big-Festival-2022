@@ -11,7 +11,7 @@ public class AudioController : Singleton<AudioController>
 
     // Start is called before the first frame update
 
-    private void Awake()
+    public void Start()
     {
         foreach (Sounds sounds in gameSounds)
         {
@@ -26,13 +26,15 @@ public class AudioController : Singleton<AudioController>
         }
     }
 
-    public void play(string name)
+    public void Play(string name)
     {
         Sounds sound = Array.Find(gameSounds, Sounds => Sounds.name == name);
+
+        Debug.Log(sound.name);
         sound.source.Play();
     }
 
-    public void stop(string name)
+    public void Stop(string name)
     {
         Sounds sound = Array.Find(gameSounds, Sounds => Sounds.name == name);
         sound.source.Stop();
@@ -47,11 +49,11 @@ public class AudioController : Singleton<AudioController>
     private IEnumerator goodAwakeUp()
     {
         //Debug.Log("stop dreambackground");
-        setSoundVolume("DreamBackground", 0.03f);
+        SetSoundVolume("DreamBackground", 0.03f);
         //Debug.Log("play gameover");
-        play("Victory");
+        Play("Victory");
         yield return new WaitForSeconds(0.8f);
-        play("Clock");
+        Play("Clock");
     }
 
     public void startBadAwake()
@@ -62,17 +64,17 @@ public class AudioController : Singleton<AudioController>
 
     private IEnumerator badAwakeUp()
     {
-        stop("Horse");
-        stop("DreamBackground");
+        Stop("Horse");
+        Stop("DreamBackground");
         //Debug.Log("stop dreambackground");
-        setSoundVolume("Nightmare", 0.08f);
+        SetSoundVolume("Nightmare", 0.08f);
         //Debug.Log("play gameover");
-        play("WakeUp");
+        Play("WakeUp");
         yield return new WaitForSeconds(0.3f);
-        play("GameOver");
+        Play("GameOver");
     }
 
-    public void setSoundVolume(string name, float volume)
+    public void SetSoundVolume(string name, float volume)
     {
         //Debug.Log("Entered in setsoundvalume");
         Sounds sound = Array.Find(gameSounds, Sounds => Sounds.name == name);
