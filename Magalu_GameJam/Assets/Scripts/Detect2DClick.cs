@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Core;
 
 public class Detect2DClick : MonoBehaviour
 {
@@ -9,9 +10,14 @@ public class Detect2DClick : MonoBehaviour
     private RaycastHit2D _hit;
     private Vector2 _clickPosition;
 
-    private HouseRooms _currenRoom;
+    private HouseRooms _currenGirlRoom;
 
     #endregion
+
+    private void Init()
+    {
+        CharacterMovement.onChangedRoom += ReceiveCurrentRoom;
+    }
 
     void Update()
     {
@@ -24,8 +30,14 @@ public class Detect2DClick : MonoBehaviour
         {
             var item = GetItemCollider(Input.mousePosition);
 
-            if (item != null)
+            if (item != null && (item.ItemRoom.CompareTo(_currenGirlRoom) == 0))
+            {
+                var comp = item.ItemRoom.CompareTo(_currenGirlRoom);
+
+                Debug.Log("comparação" + comp);
                 item.Interact();
+            }
+                
         }
     }
 
@@ -47,6 +59,6 @@ public class Detect2DClick : MonoBehaviour
     private void ReceiveCurrentRoom(HouseRooms girlRoom)
     {
         //method called by the girl event 
-        _currenRoom = girlRoom;
+        _currenGirlRoom = girlRoom;
     }
 }

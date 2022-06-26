@@ -23,6 +23,10 @@ namespace Core
         private float tParam;
         private Vector2 characterPosition;
 
+        public delegate void OnChangedRoom(HouseRooms _currentRoom);
+        public static OnChangedRoom onChangedRoom;
+
+
         private void Start()
         {
             routeToGo = 0;
