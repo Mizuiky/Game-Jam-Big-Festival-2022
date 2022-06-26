@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ba8900c88b862b41bb804501408d85a, type: 3}
-  m_Name: SO_Dialog_BedTable
+  m_Name: SO_Dialog_Clock
   m_EditorClassIdentifier: 
   _dialog:
-  - _text: "Aonde foi mesmo que coloquei aquela rosa? Ela costumava ficar aqui. \r\n\n"
-  - _text: "Foi um presente dela\u2026 acho que eu deixei no jardim.\r"
+  - _text: "Tanto faz a hora\u2026 estou de f\xE9rias."
+  - _text: "Eu costumava reformar o jardim nas f\xE9rias. "
+  - _text: "Talvez eu poderia dar uma olhadinha l\xE1?."
+  - _text: " Ah.. pensando bem \xE9 melhor n\xE3o\u2026"

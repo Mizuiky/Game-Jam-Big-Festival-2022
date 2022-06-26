@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialog:
   - _text: "N\xE3o sei porque voc\xEA foi embora t\xE3o cedo\u2026 voc\xEA era minha
-      \xFAnica amiga.\r\nTinha um futuro todo pela frente. \xC0s vezes acho que deveria
-      ter ido no seu lugar\u2026\r\n\r\n"
+      \xFAnica amiga.\r\n\n\r\n"
+  - _text: "Tinha um futuro todo pela frente. \xC0s vezes acho que deveria ter ido
+      no seu lugar\u2026\r\n\r\n"
