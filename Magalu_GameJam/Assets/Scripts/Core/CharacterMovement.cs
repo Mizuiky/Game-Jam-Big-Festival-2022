@@ -24,8 +24,7 @@ namespace Core
         private Vector2 characterPosition;
 
         public delegate void OnChangedRoom(HouseRooms _currentRoom);
-        public static OnChangedRoom onChangedRoom;
-
+        public static event OnChangedRoom onChangedRoom;
 
         private void Start()
         {
@@ -128,6 +127,41 @@ namespace Core
                 tParam = 0f;
             }
 
+            SetRoom();
+
+        }
+
+        private void SetRoom()
+        {
+            var houseRoom = HouseRooms.Bedroom;
+
+            if (routeToGo == 0 && !moveFoward)
+            {
+                houseRoom = HouseRooms.Bedroom;
+
+            }
+            else if (routeToGo == 0 && moveFoward)
+            {
+                houseRoom = HouseRooms.Kitchen;
+            }
+            else if (routeToGo == 1 && !moveFoward)
+            {
+                houseRoom = HouseRooms.Kitchen;
+            }
+            else if (routeToGo == 1 && moveFoward)
+            {
+                houseRoom = HouseRooms.LivingRoom;
+            }
+            else if (routeToGo == 2 && !moveFoward)
+            {
+                houseRoom = HouseRooms.LivingRoom;
+            }
+            else if (routeToGo == 2 && moveFoward)
+            {
+                houseRoom = HouseRooms.Garden;
+            }
+
+            onChangedRoom?.Invoke(houseRoom);
         }
     }
 }
