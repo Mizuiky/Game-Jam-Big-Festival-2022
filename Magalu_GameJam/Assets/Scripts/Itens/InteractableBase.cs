@@ -80,7 +80,10 @@ public class InteractableBase : MonoBehaviour, IInteractable
 
     public virtual void Interact() 
     {
-        DialogManager.Instance.Initialize(_dialog, _hasEspecialItem, _itemName);   
+        DialogManager.Instance.Initialize(_dialog, _hasEspecialItem, _itemName);
+
+        if(_hasEspecialItem)
+            _hasEspecialItem = false;
     }
 
     public void ScaleAnimation()
