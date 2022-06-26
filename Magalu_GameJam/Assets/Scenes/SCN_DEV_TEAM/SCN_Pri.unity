@@ -571,6 +571,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15603b5cb4bed85488bc705fad204f8f, type: 3}
+--- !u!114 &1710834376 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8161417120929188705, guid: 15603b5cb4bed85488bc705fad204f8f, type: 3}
+  m_PrefabInstance: {fileID: 1710834375}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 223029cb5245cc04e8f383810e1571f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1803992129
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,7 +721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a913f667c5bf2e41b30370a77a657c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _flower: {fileID: 0}
+  _flower: {fileID: 1710834376}
   _petal: {fileID: 2242041169228095014, guid: ebd7b85c417281241bdd034fcdf2eebd, type: 3}
   _petalPosition: {fileID: 545092054}
   _manager: {fileID: 545092054}
