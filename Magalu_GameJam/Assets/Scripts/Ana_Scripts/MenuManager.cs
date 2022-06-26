@@ -1,26 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
-
-
 {
-    public string _NovaCena;
-    private Animator anim;
-
+    // Start is called before the first frame update
     void Start()
     {
-        anim = gameObject.GetComponent<Animator>();
-        anim.SetBool("isIniciate", true);
+        
     }
-    void FixedUpdate()
+
+    // Update is called once per frame
+    void Update()
     {
-        anim.SetBool("isIniciate", false);
-    }
-    public void NovoJogo()
-    {
-        SceneManager.LoadScene(_NovaCena);
+        
     }
 }
