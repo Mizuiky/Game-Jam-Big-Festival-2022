@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: SO_Dialog_VHS
   m_EditorClassIdentifier: 
   _dialog:
-  - _text: "\xC9, n\xE3o d\xE1 pra fugir das mem\xF3rias ruins\u2026 mas sem elas,
-      as boas tamb\xE9m se perderiam."
   - _text: Bem que a gente poderia guardar os melhores momentos em fitas,
-  - _text: "como nossos filmes favoritos, pra lembrar deles sempre que quis\xE9ssemos\u2026"
+  - _text: "como nossos filmes favoritos, pra lembrar deles sempre que quis\xE9ssemos\u2026
+      \r\n"

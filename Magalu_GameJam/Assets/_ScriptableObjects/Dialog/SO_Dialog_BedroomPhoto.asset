@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: SO_Dialog_BedroomPhoto
   m_EditorClassIdentifier: 
   _dialog:
-  - _text: "N\xE3o sei porque voc\xEA foi embora t\xE3o cedo\u2026 voc\xEA era minha
-      \xFAnica amiga.\r\n\n\r\n"
-  - _text: "Tinha um futuro todo pela frente. \xC0s vezes acho que deveria ter ido
-      no seu lugar\u2026\r\n\r\n"
+  - _text: "Eu lembro desse dia, me diverti muito\u2026 foi na formatura de Lily.
+      \r\n\n"
+  - _text: "Ela sempre foi t\xE3o inteligente.\r"

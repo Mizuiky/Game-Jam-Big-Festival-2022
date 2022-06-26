@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: SO_Dialog_Wardrobe
   m_EditorClassIdentifier: 
   _dialog:
-  - _text: "N\xE3o tenho \xE2nimo para me arrumar agora.\r\n \r\n"
-  - _text: "Faz tempo que n\xE3o saio pra me divertir, desde que aquilo tudo aconteceu\u2026 "
-  - _text: "bem, deixa pra l\xE1."
+  - _text: "N\xE3o tenho \xE2nimo para me arrumar agora, \n\r\n"
+  - _text: " e acho que nenhuma roupa a\xED me serviria."
