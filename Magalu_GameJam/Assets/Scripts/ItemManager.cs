@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Core;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class ItemManager : Singleton<ItemManager>
 {
@@ -54,12 +55,17 @@ public class ItemManager : Singleton<ItemManager>
 
     public void ShowPetal()
     {
-        if(_indexList.Count > 0)
+        if (_indexList.Count > 0)
         {
+            Debug.Log("count" + _indexList.Count);
             _flower.EnablePetal(_indexList[_currentPetalIndex]);
 
             _indexList.RemoveAt(_currentPetalIndex);
-        }      
+
+            if (_indexList.Count == 0)
+                SceneManager.LoadScene(3);
+
+        }
     }
 
     private void GetRandomPetalIndex()

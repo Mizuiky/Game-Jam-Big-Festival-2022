@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/SCN_Menu.unity
     guid: b12b9ff87e9a347fcaa2719107de957f
@@ -16,11 +13,8 @@ EditorBuildSettings:
     guid: 0561329d479d2044a81d43c3e6a9ea65
   - enabled: 1
     path: Assets/Scenes/SCN_Game.unity
-    guid: f3d9a1c0795c3634a89aa22b5a7d7b60
+    guid: 28449823371292c41af8862db8c97177
   - enabled: 1
     path: Assets/Scenes/SCN_CutSceneFinal.unity
     guid: b5bc125e1ca2244849f95eb8c08923da
-  - enabled: 0
-    path: Assets/Scenes/SCN_DEV_TEAM/SCN_Ana.unity
-    guid: 6f6e0521c4a4dc644aaf3d3d668db415
   m_configObjects: {}
