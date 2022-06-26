@@ -13,6 +13,4 @@ MonoBehaviour:
   m_Name: SO_Dialog_Couch
   m_EditorClassIdentifier: 
   _dialog:
-  - _text: "Ao sentar aqui parece que o meu corpo fica t\xE3o pesado que n\xE3o d\xE1
-      pra sair. "
-  - _text: "Mas n\xE3o deveria ser assim\u2026 "
+  - _text: "N\xE3o acho que seja uma boa ideia parar para sentar. "

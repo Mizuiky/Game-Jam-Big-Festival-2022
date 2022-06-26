@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: SO_Dialog_Plant
   m_EditorClassIdentifier: 
   _dialog:
-  - _text: "Eu costumava ficar muito tempo no jardim\u2026 era o lugar preferido
-      dela.\r\n\r\n"
-  - _text: "Nunca mais tive coragem de sair l\xE1 fora, e ele deve estar destru\xEDdo
-      por causa da chuva dos \xFAltimos dias."
+  - _text: "A gente costumava ficar muito tempo no jardim\u2026 "
+  - _text: era o lugar preferido dela.
+  - _text: "Vivemos bons momentos l\xE1."

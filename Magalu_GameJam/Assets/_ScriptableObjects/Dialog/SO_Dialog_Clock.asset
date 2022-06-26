@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SO_Dialog_Clock
   m_EditorClassIdentifier: 
   _dialog:
-  - _text: "Tanto faz a hora\u2026 estou de f\xE9rias."
+  - _text: "Tanto faz a hora\u2026 agora. "
   - _text: "Eu costumava reformar o jardim nas f\xE9rias. "
-  - _text: "Talvez eu poderia dar uma olhadinha l\xE1?."
-  - _text: " Ah.. pensando bem \xE9 melhor n\xE3o\u2026"
+  - _text: "Talvez eu poderia dar uma olhadinha l\xE1?"
+  - _text: "Ah, pensando bem \xE9 melhor n\xE3o\u2026\r\n\r\n"
