@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: SO_Dialog_Window
   m_EditorClassIdentifier: 
   _dialog:
-  - _text: "N\xE3o tenho nenhuma vontade de sair l\xE1 fora, "
-  - _text: "e o dia tamb\xE9m parece meio cinza, sei l\xE1."
+  - _text: "N\xE3o tenho nenhuma vontade de sair l\xE1 fora,"
+  - _text: " e o dia tamb\xE9m parece meio cinza, sei l\xE1. "
+  - _text: "Quero ficar aqui, \xE9 mais acolhedor."
