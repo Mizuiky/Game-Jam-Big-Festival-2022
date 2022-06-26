@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6861129535215598438}
-  _timeToDesapear: 0.3
+  timeToDesapear: 0.3
 --- !u!1 &2242041170124209691
 GameObject:
   m_ObjectHideFlags: 0
