@@ -26,8 +26,11 @@ namespace Core
         public delegate void OnChangedRoom(HouseRooms _currentRoom);
         public static event OnChangedRoom onChangedRoom;
 
+        Animator animator;
+
         private void Start()
         {
+            animator = GetComponent<Animator>();
             this.transform.position = routes[0].position;
             routeToGo = 0;
             tParam = 0f;
@@ -62,6 +65,8 @@ namespace Core
             }
 
             List<Transform> selectedRoutes = new List<Transform>();
+
+            animator.SetBool("direction", !moveFoward);
             if (moveFoward)
             {
                 for (int i = previousRoute; i <= routeToGo; i++)
