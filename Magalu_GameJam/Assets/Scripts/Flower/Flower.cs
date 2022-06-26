@@ -19,7 +19,10 @@ public class Flower : MonoBehaviour
     public void EnablePetal(int index)
     {
         if(!petals[index].gameObject.activeInHierarchy)
+        {
             petals[index].gameObject.SetActive(true);
+        }
+            
     }
 
     private void OnDisable()

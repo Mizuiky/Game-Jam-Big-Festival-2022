@@ -54,9 +54,12 @@ public class ItemManager : Singleton<ItemManager>
 
     public void ShowPetal()
     {
-        _flower.EnablePetal(_indexList[_currentPetalIndex]);
+        if(_indexList.Count > 0)
+        {
+            _flower.EnablePetal(_indexList[_currentPetalIndex]);
 
-        _indexList.RemoveAt(_currentPetalIndex);
+            _indexList.RemoveAt(_currentPetalIndex);
+        }      
     }
 
     private void GetRandomPetalIndex()
@@ -76,6 +79,8 @@ public class ItemManager : Singleton<ItemManager>
 
     private void Init()
     {
+        FindFlower();
+
         _indexList = new List<int>();
 
         _currentPetalIndex = -1;
@@ -86,6 +91,12 @@ public class ItemManager : Singleton<ItemManager>
         }
 
         _indexList.Shuffle();
+    }
+
+    private void FindFlower()
+    {
+        if (_flower == null)
+            _flower = FindObjectOfType<Flower>();
     }
 
     public void OnDisable()
