@@ -356,6 +356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5899417397547936634}
   - component: {fileID: 1992359213618427151}
+  - component: {fileID: 4285377072451576836}
   m_Layer: 5
   m_Name: DialogBox
   m_TagString: Untagged
@@ -401,6 +402,17 @@ MonoBehaviour:
   _textBox: {fileID: 5899417397309275719}
   _characterName: {fileID: 8032658279035361712}
   _next: {fileID: 5899417396975177005}
+--- !u!210 &4285377072451576836
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5899417397547936635}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
 --- !u!1 &5899417397676720670
 GameObject:
   m_ObjectHideFlags: 0
