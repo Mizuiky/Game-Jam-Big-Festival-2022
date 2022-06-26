@@ -20,6 +20,8 @@ public class PetalAnimation : MonoBehaviour
     {
         Shine();
 
+        AudioController.Instance.Play("Brilhar");
+
         yield return new WaitForSeconds(_petal.timeToDesapear);
 
         ItemManager.Instance.ShowPetal();
