@@ -35,8 +35,9 @@ public class Detect2DClick : MonoBehaviour
         {
             var item = GetItemCollider(Input.mousePosition);
 
-            if (item != null && (item.ItemRoom.CompareTo(_currenGirlRoom) == 0))
+            if (item != null )
             {
+                //&& (item.ItemRoom.CompareTo(_currenGirlRoom) == 0)
                 item.Interact();
             }
                 
