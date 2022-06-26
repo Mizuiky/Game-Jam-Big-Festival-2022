@@ -13,9 +13,9 @@ namespace Core
         [SerializeField]
         private int routeToGo = 0;
         [SerializeField]
-        private int previousRoute = 0;
+        private int previousRoute = 1;
         [SerializeField]
-        private bool moveFoward = true;
+        private bool moveFoward = false;
         [SerializeField]
         private bool coroutineAllowed = false;
 
@@ -28,6 +28,7 @@ namespace Core
 
         private void Start()
         {
+            this.transform.position = routes[0].position;
             routeToGo = 0;
             tParam = 0f;
             speedModifier = 0.5f;
