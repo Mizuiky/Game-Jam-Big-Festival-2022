@@ -691,6 +691,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1121575666444903534, guid: e314c43520f1541018d0ed5623529578, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 992c5ba43e4ab4da1977ef413e58fc71, type: 2}
     - target: {fileID: 7711860066352013890, guid: e314c43520f1541018d0ed5623529578, type: 3}
       propertyPath: m_Name
       value: CameraCutSceneFinal
