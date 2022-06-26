@@ -367,7 +367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5503987604456383236, guid: c98bcaf3e77ddcc448c6a8350c157c14, type: 3}
       propertyPath: _timeToScale
-      value: 0.35
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5503987604456383239, guid: c98bcaf3e77ddcc448c6a8350c157c14, type: 3}
       propertyPath: m_Name
@@ -664,6 +664,7 @@ MonoBehaviour:
   _petal: {fileID: 2242041169228095014, guid: ebd7b85c417281241bdd034fcdf2eebd, type: 3}
   _petalPosition: {fileID: 545092054}
   _manager: {fileID: 545092054}
+  _maxPetalNumber: 3
 --- !u!1 &2123081278
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,7 +879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5503987604456383236, guid: c98bcaf3e77ddcc448c6a8350c157c14, type: 3}
       propertyPath: _timeToScale
-      value: 0.35
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5503987604456383239, guid: c98bcaf3e77ddcc448c6a8350c157c14, type: 3}
       propertyPath: m_Name

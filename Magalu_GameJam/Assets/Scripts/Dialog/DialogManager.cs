@@ -56,7 +56,7 @@ public class DialogManager : Singleton<DialogManager>
         _currentDialogIndex = 0;
     }
 
-    public void Initialize(SO_Dialog data, string itemName = "", bool hasItem = false)
+    public void Initialize(SO_Dialog data, bool hasItem, string itemName = "")
     {
         _dialogBox.Enable(true);
 
