@@ -90,6 +90,7 @@ public class InteractableBase : MonoBehaviour, IInteractable
     public void ResetScale()
     {
         _model.DOKill();
-        _model.localScale = _originalScale;      
+        _model.localScale = _originalScale;
+        
     }
 }
