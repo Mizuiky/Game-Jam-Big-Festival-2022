@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: "Televis\xE3o"
   itemIcon: {fileID: 21300000, guid: 3e2010c698e8f6e49a00f7893c46994b, type: 3}
   itemRoom: 2
-  hasEspecialItem: 0
+  hasEspecialItem: 1

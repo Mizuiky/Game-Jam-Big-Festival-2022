@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Comoda
   itemIcon: {fileID: 21300000, guid: 0e68577815129184ba138d18c3769839, type: 3}
   itemRoom: 0
-  hasEspecialItem: 0
+  hasEspecialItem: 1
