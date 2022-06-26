@@ -11,6 +11,8 @@ public class SO_ItemData : ScriptableObject
     public Sprite itemIcon;
 
     public HouseRooms itemRoom;
+
+    public bool hasEspecialItem;
 }
 
 [SerializeField]

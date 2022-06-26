@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,16 +8,22 @@ public class Flower : MonoBehaviour
 
     private void Start()
     {
-        Init();
+        HideFlowerPetals();
     }
 
-    private void Init()
+    private void HideFlowerPetals()
     {
         petals.ForEach(petals => petals.gameObject.SetActive(false));
     }
 
     public void EnablePetal(int index)
     {
-        petals[index].gameObject.SetActive(true);
+        if(!petals[index].gameObject.activeInHierarchy)
+            petals[index].gameObject.SetActive(true);
+    }
+
+    private void OnDisable()
+    {
+        HideFlowerPetals();
     }
 }

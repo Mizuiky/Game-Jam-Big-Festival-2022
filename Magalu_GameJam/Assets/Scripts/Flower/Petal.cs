@@ -7,7 +7,7 @@ public class Petal : MonoBehaviour
 {
     public Animator animator;
 
-    public float _timeToDesapear;
+    public float timeToDesapear;
 
     public void Glow()
     {

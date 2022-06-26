@@ -20,7 +20,9 @@ public class PetalAnimation : MonoBehaviour
     {
         Shine();
 
-        yield return new WaitForSeconds(_petal._timeToDesapear);
+        yield return new WaitForSeconds(_petal.timeToDesapear);
+
+        ItemManager.Instance.ShowPetal();
 
         Deactivate();
     }
