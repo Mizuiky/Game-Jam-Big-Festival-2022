@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6799558af030baf45b6c04e997192f3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scale: 0.376
+  _scale: 0.378
   _timeToScale: 0.5
   _data: {fileID: 11400000, guid: 969887985f1077344a234827fe41e3cc, type: 2}
   _dialog: {fileID: 11400000, guid: b5f95479af24d6f4791adab9af1a08a9, type: 2}
